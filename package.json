@@ -1,0 +1,10 @@
+{
+  "name": "cssium",
+  "version": "1.0.0",
+  "description": "CSSium framework",
+  "author": {
+    "name": "Dieter Limeback",
+    "email": "dlimeb@pm.me",
+    "url": "https://dieter.ca/"
+  }
+}

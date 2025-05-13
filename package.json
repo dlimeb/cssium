@@ -1,10 +1,16 @@
 {
-  "name": "cssium",
+  "name": "@dlimeb/cssium",
   "version": "1.0.0",
   "description": "CSSium framework",
   "author": {
     "name": "Dieter Limeback",
     "email": "dlimeb@pm.me",
     "url": "https://dieter.ca/"
+  },
+  "scripts": {
+    "release": "standard-version && git push --follow-tags && npm publish"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
   }
 }

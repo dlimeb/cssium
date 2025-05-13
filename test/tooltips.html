@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Tooltips</title>
+    <link href="../css/color.css" rel="stylesheet" />
+    <link href="../css/layout.css" rel="stylesheet" />
+    <link href="../css/typography.css" rel="stylesheet" />
+    <link href="../css/utilities.css" rel="stylesheet" />
+    <link href="../css/content.css" rel="stylesheet" />
+    <link href="../extras/tooltips.css" rel="stylesheet" />
+    <style>
+      body {
+        padding: 100px;
+      }
+      .example {
+        padding: 50px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Tooltips</h1>
+
+    <p>This is a test of the Tooltips extra.</p>
+
+    <div class="example">
+      <button class="tooltip-trigger">
+        Hover for details
+        <span class="tooltip--top">Here are the details you wanted</span>
+      </button>
+    </div>
+
+    <div class="example">
+      <strong class="tooltip-trigger">
+        Hover
+        <span class="tooltip--right">Hello</span>
+      </strong>
+    </div>
+
+    <div class="example">
+      <a class="tooltip-trigger" href="https://dieter.ca">
+        Learn more
+        <span class="tooltip--bottom"
+          >If you need more than one line,<br />insert a newline</span
+        >
+      </a>
+    </div>
+
+    <div class="example">
+      <div
+        class="tooltip-trigger"
+        style="width: 24px; height: 24px; background-color: green"
+      >
+        <span class="tooltip--left">Green box</span>
+      </div>
+    </div>
+  </body>
+</html>

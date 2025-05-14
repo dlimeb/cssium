@@ -21,34 +21,34 @@
     "Droid Sans Mono", "Consolas", "Courier New", monospace;
 
   /* Font sizing */
-  /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.2,8,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  /* @link https://utopia.fyi/type/calculator/?c=320,17,1.2,1240,19,1.2,8,0,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12 */
   /* Note: Scale from 0 - 8 is a 1.2 ratio ("Minor Third"). Steps below 0 do not follow the same scale */
 
-  /* Step -3: 12.96px → 14.6px */
-  --font-size--3: clamp(0.81rem, 0.7795rem + 0.1567vw, 0.913rem);
+  /* Step -3: 13px → 14px */
+  --font-size--3: clamp(0.8125rem, 0.7795rem + 0.1567vw, 0.875rem);
   /* Step -2: 14.4px → 16px */
-  --font-size--2: clamp(0.9rem, 0.8652rem + 0.1739vw, 1.0135rem);
-  /* Step -1: 16.216px → 18px */
-  --font-size--1: clamp(1.0135rem, 0.9743rem + 0.1959vw, 1.125rem);
-  /* Step 0: 18px → 20px */
-  --font-size-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --font-size--2: clamp(0.9rem, 0.8652rem + 0.1739vw, 1rem);
+  /* Step -1: 16.216px → 17px */
+  --font-size--1: clamp(1.0135rem, 0.9743rem + 0.1959vw, 1.0625rem);
+  /* Step 0: 17px → 19px */
+  --font-size-0: clamp(1.0625rem, 1.019rem + 0.2174vw, 1.1875rem);
   --font-size-default: var(--font-size-0);
-  /* Step 1: 20.25px → 24px */
-  --font-size-1: clamp(1.2656rem, 1.1841rem + 0.4076vw, 1.5rem);
-  /* Step 2: 22.7813px → 28.8px */
-  --font-size-2: clamp(1.4238rem, 1.293rem + 0.6542vw, 1.8rem);
-  /* Step 3: 25.6289px → 34.56px */
-  --font-size-3: clamp(1.6018rem, 1.4077rem + 0.9708vw, 2.16rem);
-  /* Step 4: 28.8325px → 41.472px */
-  --font-size-4: clamp(1.802rem, 1.5273rem + 1.3739vw, 2.592rem);
-  /* Step 5: 32.4366px → 49.7664px */
-  --font-size-5: clamp(2.0273rem, 1.6506rem + 1.8837vw, 3.1104rem);
-  /* Step 6: 36.4912px → 59.7197px */
-  --font-size-6: clamp(2.2807rem, 1.7757rem + 2.5248vw, 3.7325rem);
-  /* Step 7: 41.0526px → 71.6636px */
-  --font-size-7: clamp(2.5658rem, 1.9003rem + 3.3273vw, 4.479rem);
-  /* Step 8: 46.1841px → 85.9963px */
-  --font-size-8: clamp(2.8865rem, 2.021rem + 4.3274vw, 5.3748rem);
+  /* Step 1: 20.4px → 22.8px */
+  --font-size-1: clamp(1.275rem, 1.2228rem + 0.2609vw, 1.425rem);
+  /* Step 2: 24.48px → 27.36px */
+  --font-size-2: clamp(1.53rem, 1.4674rem + 0.313vw, 1.71rem);
+  /* Step 3: 29.376px → 32.832px */
+  --font-size-3: clamp(1.836rem, 1.7609rem + 0.3757vw, 2.052rem);
+  /* Step 4: 35.2512px → 39.3984px */
+  --font-size-4: clamp(2.2032rem, 2.113rem + 0.4508vw, 2.4624rem);
+  /* Step 5: 42.3014px → 47.2781px */
+  --font-size-5: clamp(2.6438rem, 2.5357rem + 0.5409vw, 2.9549rem);
+  /* Step 6: 50.7617px → 56.7337px */
+  --font-size-6: clamp(3.1726rem, 3.0428rem + 0.6491vw, 3.5459rem);
+  /* Step 7: 60.9141px → 68.0804px */
+  --font-size-7: clamp(3.8071rem, 3.6513rem + 0.779vw, 4.255rem);
+  /* Step 8: 73.0969px → 81.6965px */
+  --font-size-8: clamp(4.5686rem, 4.3816rem + 0.9347vw, 5.106rem);
 
   /* Line height */
   --line-height-none: 1;

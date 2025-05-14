@@ -1,0 +1,178 @@
+/*
+*
+* BUTTONS
+*
+* Define a set of basic buttons for general use. Attributes that are often
+* changed (eg colour, typography) are defined via variables to make for easy
+* overriding in custom CSS.
+*
+* Current limitations:
+*   - Only 3 styles, for a basic hierarchy of primary, secondary, tertiary
+*   - Only one size (though padding is a variable)
+*   - No feedback-colored variants like a red "danger" button (though all
+*     colors are variables)
+*   - No handling of enhancements like adding icons
+*   - Disabled is supported
+*
+*/
+
+/* VARIABLES */
+:root {
+  --btn-font-family: var(--font-sans);
+  --btn-font-size: var(--font-size--1);
+  --btn-font-weight: 500;
+  --btn-padding: var(--space-xs) var(--space-m);
+  --btn-border-radius: 4px;
+  --btn-border-width: 1px;
+  --btn-focus-highlight-width: 2px;
+  --btn-focus-highlight-offset: 2px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --btn-focus-highlight-color: var(--color-text-default);
+
+    --btn-primary-bg-color: var(--cyan-400);
+    --btn-primary-bg-color-hover: var(--cyan-300);
+    --btn-primary-bg-color-active: var(--cyan-400);
+    --btn-primary-border-color: transparent;
+    --btn-primary-border-color-hover: transparent;
+    --btn-primary-border-color-active: transparent;
+    --btn-primary-text-color: var(--color-text-default);
+    --btn-primary-text-color-hover: var(--color-text-default);
+    --btn-primary-text-color-active: var(--color-text-default);
+
+    --btn-secondary-bg-color: var(--gray-200);
+    --btn-secondary-bg-color-hover: var(--gray-300);
+    --btn-secondary-bg-color-active: var(--gray-200);
+    --btn-secondary-border-color: transparent;
+    --btn-secondary-border-color-hover: transparent;
+    --btn-secondary-border-color-active: transparent;
+    --btn-secondary-text-color: var(--color-text-default);
+    --btn-secondary-text-color-hover: var(--color-text-default);
+    --btn-secondary-text-color-active: var(--color-text-default);
+
+    --btn-tertiary-bg-color: transparent;
+    --btn-tertiary-bg-color-hover: transparent;
+    --btn-tertiary-bg-color-active: var(--gray-100);
+    --btn-tertiary-border-color: var(--gray-300);
+    --btn-tertiary-border-color-hover: var(--gray-400);
+    --btn-tertiary-border-color-active: var(--gray-300);
+    --btn-tertiary-text-color: var(--color-text-default);
+    --btn-tertiary-text-color-hover: var(--color-text-default);
+    --btn-tertiary-text-color-active: var(--color-text-default);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --btn-focus-highlight-color: var(--color-text-muted);
+
+    --btn-primary-bg-color: var(--cyan-600);
+    --btn-primary-bg-color-hover: var(--cyan-500);
+    --btn-primary-bg-color-active: var(--cyan-600);
+    --btn-primary-border-color: transparent;
+    --btn-primary-border-color-hover: transparent;
+    --btn-primary-border-color-active: transparent;
+    --btn-primary-text-color: white;
+    --btn-primary-text-color-hover: white;
+    --btn-primary-text-color-active: white;
+
+    --btn-secondary-bg-color: var(--gray-700);
+    --btn-secondary-bg-color-hover: var(--gray-600);
+    --btn-secondary-bg-color-active: var(--gray-700);
+    --btn-secondary-border-color: transparent;
+    --btn-secondary-border-color-hover: transparent;
+    --btn-secondary-border-color-active: transparent;
+    --btn-secondary-text-color: var(--color-text-default);
+    --btn-secondary-text-color-hover: var(--color-text-default);
+    --btn-secondary-text-color-active: var(--color-text-default);
+
+    --btn-tertiary-bg-color: transparent;
+    --btn-tertiary-bg-color-hover: transparent;
+    --btn-tertiary-bg-color-active: var(--gray-700);
+    --btn-tertiary-border-color: var(--gray-500);
+    --btn-tertiary-border-color-hover: var(--gray-400);
+    --btn-tertiary-border-color-active: var(--gray-500);
+    --btn-tertiary-text-color: var(--color-text-default);
+    --btn-tertiary-text-color-hover: var(--color-text-default);
+    --btn-tertiary-text-color-active: var(--color-text-default);
+  }
+}
+
+/* STYLES */
+/* Base styles for all buttons */
+[class*="u-btn-"] {
+  background-color: transparent;
+  border: var(--btn-border-width) solid transparent;
+  border-radius: var(--btn-border-radius);
+  font-family: var(--btn-font-family);
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+  line-height: var(--line-height-none);
+  padding: var(--btn-padding);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+[class*="u-btn-"]:not([disabled]):focus {
+  outline: var(--btn-focus-highlight-width) solid
+    var(--btn-focus-highlight-color);
+  outline-offset: var(--btn-focus-highlight-offset);
+}
+
+[class*="u-btn-"][disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Primary */
+.u-btn-primary {
+  background: var(--btn-primary-bg-color);
+  color: var(--btn-primary-text-color);
+  border-color: var(--btn-primary-border-color);
+}
+.u-btn-primary:not([disabled]):hover {
+  background: var(--btn-primary-bg-color-hover);
+  color: var(--btn-primary-text-color-hover);
+  border-color: var(--btn-primary-border-color-hover);
+}
+.u-btn-primary:active {
+  background: var(--btn-primary-bg-color-active);
+  color: var(--btn-primary-text-color-active);
+  border-color: var(--btn-primary-border-color-active);
+}
+
+/* Secondary */
+.u-btn-secondary {
+  background: var(--btn-secondary-bg-color);
+  color: var(--btn-secondary-text-color);
+  border-color: var(--btn-secondary-border-color);
+}
+.u-btn-secondary:not([disabled]):hover {
+  background: var(--btn-secondary-bg-color-hover);
+  color: var(--btn-secondary-text-color-hover);
+  border-color: var(--btn-secondary-border-color-hover);
+}
+.u-btn-secondary:active {
+  background: var(--btn-secondary-bg-color-active);
+  color: var(--btn-secondary-text-color-active);
+  border-color: var(--btn-secondary-border-color-active);
+}
+
+/* Tertiary */
+.u-btn-tertiary {
+  background: var(--btn-tertiary-bg-color);
+  color: var(--btn-tertiary-text-color);
+  border-color: var(--btn-tertiary-border-color);
+}
+.u-btn-tertiary:not([disabled]):hover {
+  background: var(--btn-tertiary-bg-color-hover);
+  color: var(--btn-tertiary-text-color-hover);
+  border-color: var(--btn-tertiary-border-color-hover);
+}
+.u-btn-tertiary:active {
+  background: var(--btn-tertiary-bg-color-active);
+  color: var(--btn-tertiary-text-color-active);
+  border-color: var(--btn-tertiary-border-color-active);
+}

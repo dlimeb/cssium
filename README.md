@@ -29,17 +29,19 @@ so YMMV etc etc.
   styling](https://github.com/dlimeb/dotfiles). The plugins and thus classnames
   will differ, but the intent and styling are very similar.)
 - Provide helpful utility classes for very common needs like a basic grid,
+  visually hiding elements, etc.
 - Variable names are _not_ currently namespaced (though I might at some point).
-  visually hiding elements, etc. Classnames this framework exposes are namespaced
-  with `.u-` so I can tell where they came from. (I have _no_ intention to evolve
-  this to a utility-first style like [Tailwind](https://tailwindcss.com/);
-  those frameworks have their place and are excellent at what they are, but in
-  general I'm not a fan of this philosophy.) Is my naming scheme/philosophy
-  perfectly consistent? Probably not.
-- I may eventually add similar default styling for interactive HTML elements
-  (eg form elements, buttons). This framework is meant to be a starting point for
-  _written content_, but I may end up using it in places like small applications
-  or a website with a contact form where these will be helpful.
+- Classnames this framework exposes are namespaced with `.u-` so I can tell
+  where they came from. (I have _no_ intention to evolve this to a utility-first
+  style like [Tailwind](https://tailwindcss.com/); those frameworks have their
+  place and are excellent at what they are, but in general I'm not a fan of this
+  philosophy.) Is my naming scheme/philosophy perfectly consistent? Probably not.
+- The `extras` directory contains CSS for commonly used elements that are not
+  possible with Markdown, like buttons. I may eventually add support for other
+  interactive HTML elements (eg form elements). This framework is meant to be a
+  starting point for _written content_, but with some additional inclusions like
+  this it can also be helpful in places like small applications or a website with
+  a contact form.
 
 ## Elements
 

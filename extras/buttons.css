@@ -6,13 +6,15 @@
 * changed (eg colour, typography) are defined via variables to make for easy
 * overriding in custom CSS.
 *
+* Buttons are styled with a classname .u-btn-* instead of the bare <button>
+* element, so you can apply button styling to a link if needed, and because the
+* hierarchy level (primary, secondary, tertiary) is required.
+*
 * Current limitations:
 *   - Only 3 styles, for a basic hierarchy of primary, secondary, tertiary
 *   - Only one size (though padding is a variable)
-*   - No feedback-colored variants like a red "danger" button (though all
-*     colors are variables)
+*   - No feedback-colored variants like a red "danger" button
 *   - No handling of enhancements like adding icons
-*   - Disabled is supported
 *
 */
 

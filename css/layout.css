@@ -85,5 +85,5 @@ body {
 .u-grid {
   display: grid;
   grid-template-columns: repeat(var(--grid-columns), 1fr);
-  gap: var(--grid-gutter);
+  column-gap: var(--grid-gutter);
 }

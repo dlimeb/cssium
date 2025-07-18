@@ -32,6 +32,7 @@
   --space-2xl: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
   /* Space 3xl: 108px → 120px */
   --space-3xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  /* TODO: Space 4xl? */
 
   /* One-up pairs */
   /* Space 3xs-2xs: 5px → 10px */

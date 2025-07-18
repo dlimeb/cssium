@@ -77,7 +77,7 @@ Inspiration: [Tailwind](https://tailwindcss.com/docs/colors),
 Set defaults for:
 
 - Font family, using [browser defaults](https://modernfontstacks.com)
-- A fluid font sizing scale ([source](https://utopia.fyi/type/calculator/)
+- A fluid font sizing scale ([source](https://utopia.fyi/type/calculator/))
 
 ### Layout
 
@@ -98,7 +98,3 @@ There is styling here for several categories of HTML elements:
 - The `<body>` tag, to establish sensible defaults for type and color
 - Bare HTML elements,like `<p>`, `<ul>`, or `<img>`
 - The output of commonly-used plugins
-
-## TODO
-
-- Add a test markdown HTML page

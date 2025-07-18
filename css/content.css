@@ -24,7 +24,6 @@ h5,
 h6 {
   margin: 2em 0 1em;
   padding: 0;
-  line-height: var(--line-height-s);
 }
 
 h1 {
@@ -153,7 +152,7 @@ a[target="_blank"]:after {
   font-weight: 500;
   content: "↗︎";
   text-decoration: none;
-  margin-left: 0.25em;
+  margin-left: 0.15em;
   vertical-align: text-top;
   color: var(--color-text-muted);
 }

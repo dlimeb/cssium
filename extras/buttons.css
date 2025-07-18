@@ -130,51 +130,51 @@
 
 /* Primary */
 .u-btn-primary {
-  background: var(--btn-primary-bg-color);
+  background-color: var(--btn-primary-bg-color);
   color: var(--btn-primary-text-color);
   border-color: var(--btn-primary-border-color);
 }
 .u-btn-primary:not([disabled]):hover {
-  background: var(--btn-primary-bg-color-hover);
+  background-color: var(--btn-primary-bg-color-hover);
   color: var(--btn-primary-text-color-hover);
   border-color: var(--btn-primary-border-color-hover);
 }
 .u-btn-primary:active {
-  background: var(--btn-primary-bg-color-active);
+  background-color: var(--btn-primary-bg-color-active);
   color: var(--btn-primary-text-color-active);
   border-color: var(--btn-primary-border-color-active);
 }
 
 /* Secondary */
 .u-btn-secondary {
-  background: var(--btn-secondary-bg-color);
+  background-color: var(--btn-secondary-bg-color);
   color: var(--btn-secondary-text-color);
   border-color: var(--btn-secondary-border-color);
 }
 .u-btn-secondary:not([disabled]):hover {
-  background: var(--btn-secondary-bg-color-hover);
+  background-color: var(--btn-secondary-bg-color-hover);
   color: var(--btn-secondary-text-color-hover);
   border-color: var(--btn-secondary-border-color-hover);
 }
 .u-btn-secondary:active {
-  background: var(--btn-secondary-bg-color-active);
+  background-color: var(--btn-secondary-bg-color-active);
   color: var(--btn-secondary-text-color-active);
   border-color: var(--btn-secondary-border-color-active);
 }
 
 /* Tertiary */
 .u-btn-tertiary {
-  background: var(--btn-tertiary-bg-color);
+  background-color: var(--btn-tertiary-bg-color);
   color: var(--btn-tertiary-text-color);
   border-color: var(--btn-tertiary-border-color);
 }
 .u-btn-tertiary:not([disabled]):hover {
-  background: var(--btn-tertiary-bg-color-hover);
+  background-color: var(--btn-tertiary-bg-color-hover);
   color: var(--btn-tertiary-text-color-hover);
   border-color: var(--btn-tertiary-border-color-hover);
 }
 .u-btn-tertiary:active {
-  background: var(--btn-tertiary-bg-color-active);
+  background-color: var(--btn-tertiary-bg-color-active);
   color: var(--btn-tertiary-text-color-active);
   border-color: var(--btn-tertiary-border-color-active);
 }

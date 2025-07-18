@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/dlimeb/cssium/compare/v1.3.0...v1.3.1) (2025-07-18)
+
+
+### Bug Fixes
+
+* Set background on buttons properly ([d13549c](https://github.com/dlimeb/cssium/commit/d13549cb54cdbb9bae97b99754b64c7197aed7b6))
+* Spacing for ext link icon, headers ([26d4749](https://github.com/dlimeb/cssium/commit/26d4749e0d000a69d15e16859045b802408f2c49))
+
 ## [1.3.0](https://github.com/dlimeb/cssium/compare/v1.2.0...v1.3.0) (2025-05-26)
 
 
